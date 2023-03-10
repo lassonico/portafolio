@@ -21,7 +21,6 @@ html {
 }
   
 body{
-    
     font-family: 'Roboto', sans-serif;
 }
 
@@ -72,6 +71,7 @@ a{
     text-align: left;
     font-size: 20px;
     margin: 0;
+    font-display: swap;
 }
 
 @media (min-width: 768px){
@@ -105,6 +105,7 @@ a{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: 1px;
+    font-display: swap;
     z-index: 1;
 }
 
@@ -243,10 +244,12 @@ a{
     font-family: 'Roboto Condensed', sans-serif;
     text-align: left;
     font-size: 19px;
+    font-display: swap;
 }
 @media (min-width:768px){
     .hero .text-hero{
         text-align: center;
+        margin-top: 15px;
     }
 }
 .contenido-hero{
@@ -273,9 +276,6 @@ a{
 }
 
 @media (min-width: 768px){
-    .hero h1{
-        text-align: center;
-    }
     .hero .subtitle{
         text-align: center;
     }
@@ -374,6 +374,7 @@ a{
     padding: 17px 5px;
     width: 100%;
     text-align: center;
+    font-display: swap;
 }
 @media (min-width: 768px){
     .navegacion-principal a{
@@ -436,6 +437,7 @@ a{
     border: 1px solid var(--secondary);
     border-radius: 30px;
     padding: 7px 50px;
+    font-display: swap;
 }
       
 .btn-secundary:before {

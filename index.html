@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="normalize.css">
 
     <link rel="preload" href="app.css" as="style">
+    <link rel="preload" href="app.css" as="font">
     <link rel="stylesheet" href="app.css">
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
@@ -33,20 +34,20 @@
 <body>
     <header class="hero portada" id="inicio">
         <div class="contenedor-nav down">
-            <img src="./img/LogoSoynico2.svg" alt="logotipo de la empresa" class="logotipo">
+            <img src="./img/LogoSoynico2.svg" alt="logotipo de la empresa" width="45" height="45" class="logotipo">
             <nav class="navegacion-principal">
                 <a href="#servicios" class="enlace">Qué hago</a>
                 <a href="#sobremi" class="enlace">Sobre mi</a>
                 <a href="#proyectos" class="enlace">Proyectos</a>
                 <a href="#contacto" class="enlace">Contacto</a>
                 <div class="contenedor__rrss">
-                    <a class="enlace" href="https://www.facebook.com/profile.php?id=100030385413683" target="_blank">
+                    <a class="enlace" href="https://www.facebook.com/profile.php?id=100030385413683" target="_blank" rel="noopener noreferrer">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#25ced1" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                             <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
                         </svg>
                     </a>
-                    <a class="enlace" href="https://www.instagram.com/nicolasrodriguezoficial/" target="_blank">
+                    <a class="enlace" href="https://www.instagram.com/nicolasrodriguezoficial/" target="_blank" rel="noopener noreferrer">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#25ced1" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                             <rect x="4" y="4" width="16" height="16" rx="4" />
@@ -54,7 +55,7 @@
                             <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
                         </svg>
                     </a>
-                    <a class="enlace" href="https://www.linkedin.com/in/nícola-andrés-lasso-rodriguez-a47134267" target="_blank">
+                    <a class="enlace" href="https://www.linkedin.com/in/nícola-andrés-lasso-rodriguez-a47134267" target="_blank" rel="noopener noreferrer">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#25ced1" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                             <rect x="4" y="4" width="16" height="16" rx="2" />
@@ -64,13 +65,13 @@
                             <path d="M16 16v-3a2 2 0 0 0 -4 0" />
                           </svg>
                     </a>
-                    <a class="enlace" href="https://twitter.com/lassonicola" target="_blank">
+                    <a class="enlace" href="https://twitter.com/lassonicola" target="_blank" rel="noopener noreferrer">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#25ced1" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                             <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
                           </svg>
                     </a>
-                    <a class="enlace" href="https://github.com/lassonico" target="_blank">
+                    <a class="enlace" href="https://github.com/lassonico" target="_blank" rel="noopener noreferrer">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#25ced1" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                             <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
@@ -146,7 +147,7 @@
                     </div>
                     <div class="flip-card-back">
                         <p class="title">Ecommerce</p>
-                        <p>Desarrollo plataformas de comercio electrónico personalizadas para empresas y organizaciones de todos los tamaños. Con integración a pasarelas de pago, redes sociales, WhatsApp y bases de datos. Puedo ayudarte a llevar tu negocio al siguiente nivel aumentar las ventas y alcanzar el éxito de tu tienda.</p>
+                        <p>Desarrollo plataformas de comercio electrónico personalizadas para empresas y organizaciones de todos los tamaños. Con integración a pasarela de pago, redes sociales, WhatsApp y bases de datos. Correos corporativos, alojamiento y mantenimiento. Puedo ayudarte a llevar tu negocio al siguiente nivel.</p>
                     </div>
                 </div>
             </div>
@@ -195,7 +196,7 @@
             <h2>Sobre mi</h2>
             <picture data-aos="zoom-in-right" class="img-sobre">
                 <source loading="lazy" srcset="./img/imgprincipal.webp" type="image/webp"/>
-                <img loading="lazy" class="sobreMi" src="./img/imgprincipal.jpg" alt="Imagen sobre mi"/>
+                <img loading="lazy" class="sobreMi" src="./img/imgprincipal.jpg" alt="Imagen de perfil"/>
             </picture>
             <div class="contenedortext__sobre_mi">
                 <p class="text-sobremi">Soy un apasionado por la tecnología. Adoro crear cosas producto de mi imaginación y resolver los problemas que se van presentando en la ejecución de un proyecto. Mi preparación en el desarrollo web es netamente autodidacta. Por medio de plataformas de educación gratuita y de paga certificados, y desde hace 4 años, voy evolucionando en un proceso de aprendizaje continuo y constante para brindar lo mejor de mi pasión. Mis <a href="#proyectos" class="proyect-text">proyectos</a> y experiencia hablan por mí. Estaré encantado de ayudarte en el proceso de escalar tu empresa, negocio o emprendimiento.</p>
@@ -230,7 +231,7 @@
                 <article class="projects__item">
                     <picture>
                         <source loading="lazy" srcset="img/proyectos/cotizadorcryptos.webp" type="image/webp"/>
-                        <img loading="lazy" data-aos="fade-right" src="img/proyectos/cotizadorCryptos.jpg" class="projects__img projects__img_big">
+                        <img loading="lazy" data-aos="fade-right" src="img/proyectos/cotizadorCryptos.jpg" class="projects__img projects__img_big" alt="imagen de proyecto cotizados cryptomondas">
                     </picture>
                     <div class="projects__hover">
                         <a href="https://cotiza-cryptomonedas.netlify.app/" target="_blank">
@@ -249,7 +250,7 @@
                 <article class="projects__item hidden">
                     <picture>
                         <source loading="lazy" srcset="img/proyectos/criptomonedasapp.webp" type="image/webp"/>
-                        <img loading="lazy" data-aos="fade-right" src="img/proyectos/criptomonedasApp.jpg" class="projects__img projects__img_big2">
+                        <img loading="lazy" data-aos="fade-right" src="img/proyectos/criptomonedasApp.jpg" class="projects__img projects__img_big2" alt="imagen de proyecto criptomonedasApp alterna">
                     </picture>
                     <div class="projects__hover">
                         <a href="https://cotiza-cryptomonedas.netlify.app/" target="_blank">
@@ -268,7 +269,7 @@
                 <article class="projects__item">
                     <picture>
                         <source loading="lazy" srcset="img/proyectos/controgastos.webp" type="image/webp"/>
-                        <img loading="lazy" data-aos="fade-right" src="img/proyectos/controGastos.jpg" class="projects__img">
+                        <img loading="lazy" data-aos="fade-right" src="img/proyectos/controGastos.jpg" class="projects__img" alt="imagen de proyecto sistema de control de gastos">
                     </picture>
                     <div class="projects__hover">
                         <a href="https://presupuestocontroladoapp.netlify.app/" target="_blank">
@@ -287,7 +288,7 @@
                 <article class="projects__item">
                     <picture>
                         <source loading="lazy" srcset="img/proyectos/proactivosimulador.webp" type="image/webp"/>
-                        <img loading="lazy" data-aos="fade-right" src="img/proyectos/proactivoSimulador.jpg" class="projects__img">
+                        <img loading="lazy" data-aos="fade-right" src="img/proyectos/proactivoSimulador.jpg" class="projects__img" alt="imagen de proyecto simulador">
                     </picture>
                     <div class="projects__hover">
                         <a href="https://simuladorproactivoapp.netlify.app/" target="_blank">
@@ -306,7 +307,7 @@
                 <article class="projects__item">
                     <picture>
                         <source loading="lazy" srcset="img/proyectos/recetasapp.webp" type="image/webp"/>
-                        <img loading="lazy" data-aos="fade-right" src="img/proyectos/recetasapp.jpg" class="projects__img">
+                        <img loading="lazy" data-aos="fade-right" src="img/proyectos/recetasapp.jpg" class="projects__img" alt="imagen de proyecto recetas app">
                     </picture>
                     <div class="projects__hover">
                         <a href="https://delirecetas.netlify.app/" target="_blank">
@@ -325,7 +326,7 @@
                 <article class="projects__item">
                     <picture>
                         <source loading="lazy" srcset="img/proyectos/presutuestoApp.webp" type="image/webp"/>
-                        <img loading="lazy" data-aos="fade-right" src="img/proyectos/presutuestoApp.jpg" class="projects__img">
+                        <img loading="lazy" data-aos="fade-right" src="img/proyectos/presutuestoApp.jpg" class="projects__img" alt="imagen de proyecto control de presupuesto">
                     </picture>
                     <div class="projects__hover">
                         <a href="https://admingastos.netlify.app/" target="_blank">
@@ -391,14 +392,14 @@
         </form>
     </section>
     
-    <a class="up">
+    <p class="up">
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-up" width="48" height="48" viewBox="0 0 24 24" stroke-width="2.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
         <line x1="12" y1="5" x2="12" y2="19" />
         <line x1="18" y1="11" x2="12" y2="5" />
         <line x1="6" y1="11" x2="12" y2="5" />
         </svg>
-    </a>
+    </p>
 
     <footer class="footer">
         <div class="footer__contenedor">
@@ -415,13 +416,13 @@
                 <p>Correo: contacto@soynico.click</p>
                 <h2 class="sigueme">Sígueme</h2>
                 <div class="footer__rrss">
-                    <a href="https://www.facebook.com/profile.php?id=100030385413683" target="_blank">
+                    <a href="https://www.facebook.com/profile.php?id=100030385413683" target="_blank" rel="noopener noreferrer">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                             <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
                         </svg> 
                     </a>
-                    <a href="https://www.instagram.com/nicolasrodriguezoficial/" target="_blank">
+                    <a href="https://www.instagram.com/nicolasrodriguezoficial/" target="_blank" rel="noopener noreferrer">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                             <rect x="4" y="4" width="16" height="16" rx="4" />
@@ -429,7 +430,7 @@
                             <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
                         </svg>
                     </a>
-                    <a href="https://www.linkedin.com/in/nícola-andrés-lasso-rodriguez-a47134267" target="_blank">
+                    <a href="https://www.linkedin.com/in/nícola-andrés-lasso-rodriguez-a47134267" target="_blank" rel="noopener noreferrer">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                             <rect x="4" y="4" width="16" height="16" rx="2" />
@@ -439,19 +440,19 @@
                             <path d="M16 16v-3a2 2 0 0 0 -4 0" />
                           </svg>
                     </a>
-                    <a href="https://twitter.com/lassonicola" target="_blank">
+                    <a href="https://twitter.com/lassonicola" target="_blank" rel="noopener noreferrer">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                             <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
                           </svg>
                     </a>
-                    <a href="https://github.com/lassonico" target="_blank">
+                    <a href="https://github.com/lassonico" target="_blank" rel="noopener noreferrer">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                             <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
                         </svg>
                     </a>
-                    <a class="enlace" href="https://api.whatsapp.com/send?phone=573027503442" target="_blank">
+                    <a class="enlace" href="https://api.whatsapp.com/send?phone=573027503442" target="_blank" rel="noopener noreferrer">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                             <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
@@ -485,8 +486,8 @@
     </div>
 
     <script src="modernizer.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+    <script src="aos.js"></script>
+    <script src="lord.js"></script>
     <script>
         AOS.init();
     </script>
