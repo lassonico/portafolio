@@ -23,10 +23,10 @@ if ('serviceWorker' in navigator) {
   
   const CACHE_NAME = 'my-site-cache-v1';
   const urlsToCache = [
-    'aos.js',
-    'app.js',
-    'lord.js',
-    'modernizer.js'
+    '/aos.js',
+    '/app.js',
+    '/lord.js',
+    '/modernizer.js'
   ];
   
   self.addEventListener('install', event => {
