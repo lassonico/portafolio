@@ -22,7 +22,7 @@ if ('serviceWorker' in navigator) {
   const CACHE_NAME = 'my-site-cache-v1';
   const urlsToCache = [
     'aos.js',
-    'app.js',
+    'appmin.js',
     'lord.js',
     'modernizer.js'
   ];
