@@ -1,5 +1,3 @@
-//------ AI -----
-
 // Para configurar el caché con código JS y almacenar archivos JS, podemos usar la API de Service Workers y el objeto Cache. Aquí hay un ejemplo de cómo hacerlo:
 
 // 1. Registrando el Service Worker:
@@ -23,10 +21,10 @@ if ('serviceWorker' in navigator) {
   
   const CACHE_NAME = 'my-site-cache-v1';
   const urlsToCache = [
-    '/aos.js',
-    '/app.js',
-    '/lord.js',
-    '/modernizer.js'
+    'aos.js',
+    'app.js',
+    'lord.js',
+    'modernizer.js'
   ];
   
   self.addEventListener('install', event => {
