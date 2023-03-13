@@ -556,7 +556,10 @@ height: 2px;
     transition: transform 0.8s;
     transform-style: preserve-3d;
   }
-  
+  .flip-card-inner img{
+    margin: 0 auto ;
+  }
+
   .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
   }
