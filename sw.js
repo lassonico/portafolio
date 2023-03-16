@@ -14,10 +14,8 @@ if ('serviceWorker' in navigator) {
         });
     });
   }
-  
-  
+
   // 2. Creando el archivo SW.js:
-  
   
   const CACHE_NAME = 'my-site-cache-v1';
   const urlsToCache = [
@@ -51,8 +49,3 @@ if ('serviceWorker' in navigator) {
         })
     );
   });
-  
-  
-  // Aquí estamos almacenando en caché los archivos `/`, `/styles/main.css` y `/script/main.js` en el objeto `urlsToCache`. En el evento `install`, estamos abriendo la caché y almacenando los archivos allí. En el evento `fetch`, estamos comprobando si la solicitud coincide con un archivo almacenado en caché. Si es así, devolvemos el archivo almacenado en caché. Si no, realizamos la solicitud de red.
-  
-  // Con esta configuración de caché, los archivos JavaScript se almacenarán en caché en el navegador del usuario, lo que reducirá el tiempo de carga de la página y mejorará el rendimiento de nuestro sitio web
