@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&family=Roboto:wght@300;400;500;700;900&display=swap');
 
 :root{
-    --primary: #070c1d;
-    --primartransparent: #070c1de8;
+    /* --primary: #070c1d; */
+    --primary: #131313;
+    /* --primartransparent: #070c1de8; */
+    --primartransparent: #131313e7;
     --secondary: #25ced1;
     --botons: #034078;
     --info: #873fe9;
@@ -15,8 +17,8 @@
 html {
     font-size: 62.5%;
     background: var(--primary);
-    background: -webkit-linear-gradient(to right, #0a1027, var(--primary));
-    background: linear-gradient(to right, #0a1027, var(--primary));
+    /* background: -webkit-linear-gradient(to right, #0a1027, var(--primary));
+    background: linear-gradient(to right, #0a1027, var(--primary)); */
     scroll-behavior: smooth;
 }
   
@@ -693,6 +695,15 @@ height: 2px;
     grid-row-gap: 40px;
     margin-top: 50px;
 }
+.gridSkills .content-icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.gridSkills .content-icon p {
+    color: white;
+    font-size: 1.5rem;
+}
 .gridSkills .item{
     width: 50px;
     height: 50px;
@@ -890,7 +901,10 @@ height: 2px;
     border-bottom: 1px solid var(--secondary);
     border-radius: 0;
     outline: none;
-    min-height: 80px;
+    max-height: 220px;
+    min-height: 100px;
+    max-width: 100%;
+    min-width: 100%;
 }
 .formulario textarea::placeholder{
     color: #8080807a;
@@ -986,10 +1000,9 @@ height: 2px;
 }
 .footer h2{
     text-align: start;
-    color: var(--bgbody);
+    color: var(--secondary);
     font-size: 2.3rem;
     font-weight: 900;
-    text-transform: uppercase;
 }
 .footer h4{
     font-size: 19px;
