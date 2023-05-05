@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&family=Roboto:wght@300;400;500;700;900&display=swap');
 
 :root{
-    /* --primary: #070c1d; */
-    --primary: #131313;
-    /* --primartransparent: #070c1de8; */
-    --primartransparent: #131313e7;
+    --primary: #070c1d;
+    /* --primary: #131313; */
+    --primartransparent: #070c1de8;
+    /* --primartransparent: #131313e7; */
     --secondary: #25ced1;
     --botons: #034078;
     --info: #873fe9;
