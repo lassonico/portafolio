@@ -177,42 +177,57 @@ document.addEventListener('DOMContentLoaded', function(){
 
     const data = new FormData(formulario);
 
-    fetch('formulario.php', {
-        method: 'POST',
-        body: data
-    })
+    // fetch('formulario.php', {
+    //     method: 'POST',
+    //     body: data
+    // })
     
-    .then(res => res.json())
-    .then(datos => {
+    // .then(res => res.json())
+    // .then(datos => {
     
-    if(datos.error && datos.campo === 'nombre'){
-      validando('El nombre completo es obligatorio', inputNombre.parentElement);
-      inputNombre.focus()
-      comprobarEmail()
-      return
-    }
+    // if(datos.error && datos.campo === 'nombre'){
+    //   validando('El nombre completo es obligatorio', inputNombre.parentElement);
+    //   inputNombre.focus()
+    //   comprobarEmail()
+    //   return
+    // }
 
-    if(datos.error && datos.campo === 'telefono'){
-      validando('El WhatsApp tiene algún valor errado', inputTelefono.parentElement);
-      inputTelefono.focus()
-      comprobarEmail()
-      return
-    }
-    if(datos.error && datos.campo === 'email'){
-      validando('El correo electrónico tiene algún caracter errado', inputEmail.parentElement);
-      inputEmail.focus()
-      comprobarEmail()
-      return
-    }
-    if(datos.error && datos.campo === 'mensaje'){
-      validando('El mensaje tiene algún valor errado', inputMensaje.parentElement);
-      inputMensaje.focus()
-      comprobarEmail()
-      return
-    }
+    // if(datos.error && datos.campo === 'telefono'){
+    //   validando('El WhatsApp tiene algún valor errado', inputTelefono.parentElement);
+    //   inputTelefono.focus()
+    //   comprobarEmail()
+    //   return
+    // }
+    // if(datos.error && datos.campo === 'email'){
+    //   validando('El correo electrónico tiene algún caracter errado', inputEmail.parentElement);
+    //   inputEmail.focus()
+    //   comprobarEmail()
+    //   return
+    // }
+    // if(datos.error && datos.campo === 'mensaje'){
+    //   validando('El mensaje tiene algún valor errado', inputMensaje.parentElement);
+    //   inputMensaje.focus()
+    //   comprobarEmail()
+    //   return
+    // }
+    // })
+
+    // .catch( e => console.log(e))
+
+    fetch("https://formspree.io/f/mayzvrjd", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ nombre: nombre, telefono: telefono, email: email, mensaje: mensaje }),
     })
-
-    .catch( e => console.log(e))
+      .then((response) => response.json())
+      .then((data) => {
+        console.log("Formulario enviado exitosamente:", data);
+      })
+      .catch((error) => {
+        console.error("Error al enviar el formulario:", error);
+      });
 
     modal.classList.remove('oculto')
     speener.classList.remove('oculto')
