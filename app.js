@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function(){
     const elementoNavegacion = document.querySelector(".contenedor-nav");
     const elementoReferencia = document.querySelector(".portada");
     const btnUp = document.querySelector('.up')
+    const wbtn = document.querySelector('.whatsapp')
   
     function revisarPosicion() {
       const posicionY = elementoReferencia.getBoundingClientRect().bottom;
@@ -16,6 +17,12 @@ document.addEventListener('DOMContentLoaded', function(){
       if(posicionY >= 651){
         elementoNavegacion.classList.remove("scroll");
         btnUp.classList.remove("active");
+      }
+
+      if (posicionY <= -1700){
+        wbtn.classList.add("waths")
+      }else{
+        wbtn.classList.remove("waths")
       }
     }
 
@@ -77,7 +84,6 @@ document.addEventListener('DOMContentLoaded', function(){
   const btnModal = document.querySelector('.cerrarModal');
   const btnAceptar = document.querySelector('.btn__aceptar');
   const speener = document.querySelector('.modal__speener')
-    
       
   inputNombre.addEventListener('input', validar)
   inputTelefono.addEventListener('input', validar)
@@ -138,10 +144,9 @@ document.addEventListener('DOMContentLoaded', function(){
     const error = document.createElement('P')
     error.textContent = mensaje;
     error.classList.add('error')
-    
     campo.appendChild(error)
   }
-    
+
   function limpiarAlerta(referencia){
     const alerta = referencia.querySelector('.error');
     if(alerta){alerta.remove()}
@@ -167,7 +172,7 @@ document.addEventListener('DOMContentLoaded', function(){
     btn.classList.remove('opacity-50');
     btn.disabled = false;
   }
-    
+  
   // Validacion desde php
      
   function enviandoForm(e){
@@ -175,7 +180,7 @@ document.addEventListener('DOMContentLoaded', function(){
     e.preventDefault();
     e.stopPropagation();
 
-    const data = new FormData(formulario);
+    // const data = new FormData(formulario);
 
     // fetch('formulario.php', {
     //     method: 'POST',
@@ -219,27 +224,26 @@ document.addEventListener('DOMContentLoaded', function(){
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ nombre: nombre, telefono: telefono, email: email, mensaje: mensaje }),
+      body: JSON.stringify({ nombre: email.nombre, telefono: email.telefono, email: email.email, mensaje: email.mensaje }),
     })
       .then((response) => response.json())
       .then((data) => {
         console.log("Formulario enviado exitosamente:", data);
+        modal.classList.remove('oculto')
+        speener.classList.remove('oculto')
+
+        setTimeout(() =>{
+          speener.classList.add('oculto');
+          modalContent.classList.remove('oculto');
+        }, 4000)
+
+        resetForm();
+        btn.disabled = true;
+        window.scrollTo(0,0);
       })
       .catch((error) => {
         console.error("Error al enviar el formulario:", error);
       });
-
-    modal.classList.remove('oculto')
-    speener.classList.remove('oculto')
-
-    setTimeout(() =>{
-      speener.classList.add('oculto');
-      modalContent.classList.remove('oculto');
-    }, 4000)
-
-    resetForm();
-    btn.disabled = true;
-    window.scrollTo(0,0);
   }
     
   btnReset.addEventListener('click', function(e){
