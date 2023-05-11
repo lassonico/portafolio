@@ -218,34 +218,31 @@ document.addEventListener('DOMContentLoaded', function(){
     // })
 
     // .catch( e => console.log(e))
-
+    // mayzvrjd
     fetch("https://formspree.io/f/mayzvrjd", {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ nombre: email.nombre, telefono: email.telefono, email: email.email, mensaje: email.mensaje }),
-    })
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({ nombre: email.nombre, telefono: email.telefono, email: email.email, mensaje: email.mensaje })
+      })
       .then((response) => response.json())
       .then((data) => {
         console.log("Formulario enviado exitosamente:", data);
         modal.classList.remove('oculto')
         speener.classList.remove('oculto')
-
         setTimeout(() =>{
           speener.classList.add('oculto');
           modalContent.classList.remove('oculto');
         }, 4000)
 
-        resetForm();
-        btn.disabled = true;
-        window.scrollTo(0,0);
+  resetForm();
+  btn.disabled = true;
+  window.scrollTo(0,0);
       })
       .catch((error) => {
         console.error("Error al enviar el formulario:", error);
       });
   }
-    
+  
   btnReset.addEventListener('click', function(e){
     e.preventDefault();
     resetForm();
