@@ -88,7 +88,7 @@ a{
 @media (min-width: 768px){
     .hero{
         background-position: top;
-        height: 70vh;
+        height: auto;
         padding-top: 20rem;
     }
     .hero .text-hello{
