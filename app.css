@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&family=Roboto:wght@300;400;500;700;900&display=swap');
 
 :root{
-    --primary: #070c1d;
+    /* --primary: #070c1d; */
+    --primary: #15192c;
     /* --primary: #131313; */
-    --primartransparent: #070c1de8;
+    /* --primartransparent: #070c1de8; */
+    --primartransparent: #15192cef;
     /* --primartransparent: #131313e7; */
-    --cards: #090e22;
-    --secondary: #25ced1;
+    /* --cards: #090e22; */
+    --cards: #121525;
+    /* --secondary: #25ced1; */
+    --secondary: #41cadd;
     --botons: #034078;
     --info: #873fe9;
     --blanco: #fff;
@@ -241,8 +245,8 @@ a{
 .hero .subtitle{
     color: var(--blanco);
     text-align: left;
-    font-size: 23px;
-    text-decoration: underline;
+    font-size: 21px;
+    text-decoration: none;
     line-height: 5px;
 }
 .hero .subtitle::first-letter{
@@ -327,7 +331,8 @@ a{
     background-color: transparent;
 }
 .scroll{
-    background-color: var(--primartransparent);
+    /* background-color: var(--primartransparent); */
+    background-color: var(--primary);
     backdrop-filter: blur(5px);
 }
 .navegacion-principal{
@@ -625,7 +630,7 @@ height: 2px;
   }
   .flip-card-front {
     justify-content: center;
-    background: linear-gradient(120deg, #090e22 60%, #090e22 88%,
+    background: linear-gradient(120deg, var(--cards)60%, var(--cards)88%,
        var(--primary) 40%, var(--secondary) 48%);
     color: var(--primary);
   }
