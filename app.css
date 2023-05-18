@@ -2,13 +2,13 @@
 
 :root{
     /* --primary: #070c1d; */
-    --primary: #15192c;
+    --primary: #121525;
     /* --primary: #131313; */
     /* --primartransparent: #070c1de8; */
     --primartransparent: #15192cef;
     /* --primartransparent: #131313e7; */
     /* --cards: #090e22; */
-    --cards: #121525;
+    --cards: #15192c;
     /* --secondary: #25ced1; */
     --secondary: #41cadd;
     --botons: #034078;
@@ -326,14 +326,10 @@ a{
     position: fixed;
     padding-bottom: 12px;
     top: 0;
-    left: 0;
-    transition: background-color .3s;
-    background-color: transparent;
+    right: 0;
 }
 .scroll{
-    /* background-color: var(--primartransparent); */
     background-color: var(--primary);
-    backdrop-filter: blur(5px);
 }
 .navegacion-principal{
     display: flex;
@@ -342,7 +338,7 @@ a{
     justify-content: flex-start;
     position: absolute;
     top: 0;
-    left: -103%;
+    right: -103%;
     gap: 30px;
     padding-top: 32%;
     background-color: var(--primartransparent);
@@ -354,7 +350,7 @@ a{
     transition-timing-function: ease-in-out;
 }
 .navegacion-principal.active{
-    left: 0;
+    right: 0;
 }
 
 @media (min-width: 768px){
