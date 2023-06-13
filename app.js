@@ -13,8 +13,7 @@ document.addEventListener('DOMContentLoaded', function(){
       if (posicionY < 651) {
         elementoNavegacion.classList.add("scroll");
         btnUp.classList.add("active");
-      }
-      if(posicionY >= 651){
+      }else{
         elementoNavegacion.classList.remove("scroll");
         btnUp.classList.remove("active");
       }
@@ -45,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function(){
   
     function clickNav(){
       nav.classList.toggle('active');
-      contenedor.classList.remove('scroll');
+      // contenedor.classList.remove('scroll');
       btnham.classList.toggle('animationham');
       ham.classList.toggle('animationx');
       x.classList.toggle('animationx');
@@ -57,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function(){
           btnham.classList.toggle('animationham');
           ham.classList.toggle('animationx');
           x.classList.toggle('animationx');
-          contenedor.classList.remove('scroll');
+          // contenedor.classList.remove('scroll');
       })
     });
     btnham.addEventListener('click', clickNav)
