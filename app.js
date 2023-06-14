@@ -9,8 +9,8 @@ document.addEventListener('DOMContentLoaded', function(){
   
     function revisarPosicion() {
       const posicionY = elementoReferencia.getBoundingClientRect().bottom;
-
-      if (posicionY < 651) {
+      
+      if (posicionY < 1041) {
         elementoNavegacion.classList.add("scroll");
         btnUp.classList.add("active");
       }else{
@@ -35,7 +35,6 @@ document.addEventListener('DOMContentLoaded', function(){
     
   interaccionNav()
   function interaccionNav(){
-    const contenedor = document.querySelector(".contenedor-nav")
     const btnham = document.querySelector('.contenedor-ham');
     const nav = document.querySelector('.navegacion-principal');
     const ham = document.querySelector('#ham');
@@ -44,10 +43,12 @@ document.addEventListener('DOMContentLoaded', function(){
   
     function clickNav(){
       nav.classList.toggle('active');
-      // contenedor.classList.remove('scroll');
       btnham.classList.toggle('animationham');
       ham.classList.toggle('animationx');
       x.classList.toggle('animationx');
+      enlace.forEach( enlace => {
+        enlace.classList.toggle('entrada_enlace')
+      })
     }
     
     enlace.forEach( child => {
@@ -56,7 +57,9 @@ document.addEventListener('DOMContentLoaded', function(){
           btnham.classList.toggle('animationham');
           ham.classList.toggle('animationx');
           x.classList.toggle('animationx');
-          // contenedor.classList.remove('scroll');
+          enlace.forEach( enlace => {
+            enlace.classList.toggle('entrada_enlace')
+          })
       })
     });
     btnham.addEventListener('click', clickNav)
