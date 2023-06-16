@@ -10,11 +10,15 @@ document.addEventListener('DOMContentLoaded', function(){
     function revisarPosicion() {
       const posicionY = elementoReferencia.getBoundingClientRect().bottom;
 
-      if (posicionY < 961) {
+      if(scrollY >= 70){
         elementoNavegacion.classList.add("scroll");
-        btnUp.classList.add("active");
       }else{
         elementoNavegacion.classList.remove("scroll");
+      }
+      
+      if (posicionY <= 761) {
+        btnUp.classList.add("active");
+      }else{
         btnUp.classList.remove("active");
       }
 

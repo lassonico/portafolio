@@ -1,15 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&family=Roboto:wght@300;400;500;700;900&display=swap');
 
 :root{
-    /* --primary: #070c1d; */
     --primary: #121525;
-    /* --primary: #131313; */
-    /* --primartransparent: #070c1de8; */
     --primartransparent: #121525f8;
-    /* --primartransparent: #131313e7; */
-    /* --cards: #090e22; */
     --cards: #15192c;
-    /* --secondary: #25ced1; */
     --secondary: #41cadd;
     --botons: #034078;
     --info: #873fe9;
@@ -22,9 +16,8 @@
 html {
     font-size: 62.5%;
     background: var(--primary);
-    /* background: -webkit-linear-gradient(to right, #0a1027, var(--primary));
-    background: linear-gradient(to right, #0a1027, var(--primary)); */
     scroll-behavior: smooth;
+    user-select: none;
 }
   
 body{
@@ -32,13 +25,13 @@ body{
 }
 
 h2{
-    font-size: 3rem;
+    font-size: 2.2rem;
     color: var(--secondary);
     text-align: center;
 }
 @media (max-width:768px) {
     h2{
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 }
 h3{
@@ -224,7 +217,7 @@ a{
 }
 .entrada_enlace{
     animation-name: entrada_e;
-    animation-duration: .8s;
+    animation-duration: 1s;
     animation-timing-function: ease-in-out;
 }
 @keyframes entrada_e{
@@ -357,7 +350,7 @@ a{
     width: 100%;
     height: 100vh;
     transition-property: all;
-    transition-duration: .3s;
+    transition-duration: .8s;
     transition-timing-function: ease-in-out;
 }
 .navegacion-principal.active{
@@ -526,7 +519,7 @@ height: 2px;
     height: 33px;
     margin: 0 auto;
 }
-.up.active{ right: 12px;}
+.up.active{ right: 20px;}
 
 /* Imagen vector */
 .contenImg{
@@ -601,7 +594,7 @@ height: 2px;
     width: 100%;
     height: 100%;
     text-align: center;
-    transition: transform 0.8s;
+    transition: transform 1.5s;
     transform-style: preserve-3d;
   }
   .flip-card-inner img{
@@ -796,8 +789,9 @@ height: 2px;
     cursor: pointer;
 }
 .projects__title{
-    font-size: 22px;
+    font-size: 1.8rem;
     cursor: pointer;
+    text-align: center;
 }
 .projects__title:hover{
     color: var(--bgbody);
@@ -1129,14 +1123,14 @@ height: 2px;
     margin: 60px auto 2px auto;
 }
 
-.footer .footer__contacto .contacto{
-    color: var(--secondary);
+.footer .contacto{
+    color: var(--bgbody);
     font-weight: 900;
 }
 
-.footer .footer__contacto .contacto:hover{
+.footer .contacto:hover{
     cursor: pointer;
-    color: var(--bgbody);
+    color: var(--secondary);
 }
 
 .whatsapp{
