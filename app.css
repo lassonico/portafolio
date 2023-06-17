@@ -7,7 +7,7 @@
     --secondary: #41cadd;
     --botons: #034078;
     --info: #873fe9;
-    --blanco: #fff;
+    --blanco: #f0f0f0;
     --optional: #fff;
     --bg: #000000e7;
     --bgbody: #1282a2;
@@ -68,8 +68,8 @@ a{
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    min-height: 100vh;
-    padding: 17rem 0 2rem 0;
+    min-height: 90vh;
+    padding: 17rem 0 0 0;
     position: relative;
 }
 
@@ -215,6 +215,73 @@ a{
     60%{opacity: 0;}
     100%{opacity: 1;transform: translateX(0px);}
 }
+
+.entrada{
+    animation-name: entrada;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes entrada{
+    0%{opacity: 0; transform: translateX(-60px);}
+    60%{opacity: 0;}
+    100%{opacity: 1;transform: translateX(0px);}
+}
+
+.entrada_1{
+    animation-name: entrada;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes entrada{
+    0%{opacity: 0; transform: translateX(-60px);}
+    60%{opacity: 0;}
+    100%{opacity: 1;transform: translateX(0px);}
+}
+
+.entrada_2{
+    animation-name: entrada;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes entrada{
+    0%{opacity: 0; transform: translateX(-60px);}
+    60%{opacity: 0;}
+    100%{opacity: 1;transform: translateX(0px);}
+}
+
+.entrada_3{
+    animation-name: entrada;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes entrada{
+    0%{opacity: 0; transform: translateX(-60px);}
+    60%{opacity: 0;}
+    100%{opacity: 1;transform: translateX(0px);}
+}
+
+.entrada_4{
+    animation-name: entrada;
+    animation-duration: 3.5s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes entrada{
+    0%{opacity: 0; transform: translateX(-60px);}
+    60%{opacity: 0;}
+    100%{opacity: 1;transform: translateX(0px);}
+}
+
+.entrada_5{
+    animation-name: entrada;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes entrada{
+    0%{opacity: 0; transform: translateX(-60px);}
+    60%{opacity: 0;}
+    100%{opacity: 1;transform: translateX(0px);}
+}
+
 .entrada_enlace{
     animation-name: entrada_e;
     animation-duration: 1s;
@@ -256,11 +323,12 @@ a{
     font-size: 40px;
 }
 .hero .text-hero{
-    all: unset;
     color: white;
     font-family: 'Roboto Condensed', sans-serif;
     text-align: left;
     font-size: 17px;
+    font-weight: 100;
+    margin: 0;
     font-display: swap;
 }
 @media (min-width:768px){
@@ -275,7 +343,7 @@ a{
     gap: 10px;
     justify-content: center;
     padding: 0 20px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 .contenedor-nav{
     display: flex;
@@ -350,7 +418,7 @@ a{
     width: 100%;
     height: 100vh;
     transition-property: all;
-    transition-duration: .8s;
+    transition-duration: .4s;
     transition-timing-function: ease-in-out;
 }
 .navegacion-principal.active{
@@ -403,40 +471,79 @@ a{
     color: var(--secondary);
 }
 
-.contenedor__rrss{
+.hero .contenedor__rrss{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-around;
-    gap: 12px;
-}
-@media(min-width:768px){
-    .contenedor__rrss{
-        display: none;
-    }
-}
-.contenedor__rrss .icon{
-    display: block;
-    position: static;
+    margin: 0 auto 3rem 20px ;
+    gap: 8px;
 }
 
-.btn-primary {
+
+/* .btn-primary {
     text-decoration: none;
     color: var(--blanco);
     background: var(--botons);
     background: -webkit-linear-gradient(to top, var(--secondary), var(--botons)); 
     background: linear-gradient(to top, var(--secondary), var(--botons));
-    padding: 12px 30px;
+    border: 1px solid var(--bgbody);
+    padding: 12px 20px;
     display: block;
-    margin: 10px auto 50px auto;
-    width: 70%;
+    margin: 0 auto 50px 20px;
+    width: 40%;
     font-size: 17px;
     font-weight: 300;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 30px;
     cursor: pointer;
     transition: all .3s ease-in-out;
-    text-transform: uppercase;
+} */
+
+.btn-primary {
+    --green: #1282a2;
+    color: white;
+    font-size: 17px;
+    padding: 12px 40px;
+    letter-spacing: 0.06em;
+    position: relative;
+    font-weight: 200;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.4s;
+    margin: 0 auto 7rem 20px;
+    text-align: center;
+    line-height: 1.4em;
+    border: 2px solid var(--green);
+    background: linear-gradient(to right, var(--primary) 1%, transparent 40%,transparent 60% , var(--primary) 100%);
+    box-shadow: inset 0 0 5px var(--bgbody), 0 0 4px 1px var(--bgbody);
 }
+  
+.btn-primary:hover {
+    box-shadow: inset 0 0 5px var(--green), 0 0 5px 3px var(--green);
+    color: var(--secondary);
+}
+  
+.btn-primary:before {
+    content: "";
+    position: absolute;
+    left: -4em;
+    width: 4em;
+    height: 100%;
+    top: 0;
+    transition: transform .4s ease-in-out;
+    background: linear-gradient(to right, transparent 1%, var(--bgbody) 40%, var(--bgbody) 60% , transparent 100%);
+}
+  
+.btn-primary:hover:before {
+    transform: translateX(22em);
+}
+
+@media(min-width:768px){
+    .hero .contenedor__rrss{
+        display: none;
+    }
+}
+
 .btn-secundary{
     align-items: center;
     background-color: transparent;
@@ -487,11 +594,10 @@ height: 2px;
 @media (min-width: 768px){
     .btn-primary{
         width: 200px;
-        margin: 0 auto;
+        margin: 20px auto;
         z-index: 100;
     }
 }
-.hero .btn-primary:hover{background-color: var(--botons);}
 .animationham{opacity: 1;}
 .animationx{opacity: 0;}
 
@@ -877,7 +983,7 @@ height: 2px;
     flex-direction: column;
     justify-content: center;
     transform: translateX(100%);
-    transition: transform .3s ease-in-out;
+    transition: transform .5s ease-in-out;
 }
 
 .projects__item:hover .projects__hover{
@@ -1085,10 +1191,11 @@ height: 2px;
 .footer__rrss a{
     cursor: pointer;
 }
-.footer .footer__contenedor p{
+.footer p{
     font-family: 'Roboto Condensed', sans-serif;
     text-align: start;
     margin-left: 10px;
+    font-weight: 100;
 }
 @media (min-width: 768px){
     .footer .footer__contenedor{
