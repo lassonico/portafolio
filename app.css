@@ -2,7 +2,7 @@
 
 :root{
     --primary: #121525;
-    --primartransparent: #121525f8;
+    --primartransparent: #121525e8;
     --cards: #15192c;
     --secondary: #41cadd;
     --botons: #034078;
@@ -414,7 +414,7 @@ a{
     gap: 30px;
     padding-top: 32%;
     background-color: var(--primartransparent);
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(8px);
     width: 100%;
     height: 100vh;
     transition-property: all;
@@ -475,46 +475,26 @@ a{
     display: flex;
     align-items: flex-start;
     justify-content: space-around;
-    margin: 0 auto 3rem 20px ;
+    margin: 5px auto 3rem 20px ;
     gap: 8px;
 }
-
-
-/* .btn-primary {
-    text-decoration: none;
-    color: var(--blanco);
-    background: var(--botons);
-    background: -webkit-linear-gradient(to top, var(--secondary), var(--botons)); 
-    background: linear-gradient(to top, var(--secondary), var(--botons));
-    border: 1px solid var(--bgbody);
-    padding: 12px 20px;
-    display: block;
-    margin: 0 auto 50px 20px;
-    width: 40%;
-    font-size: 17px;
-    font-weight: 300;
-    text-align: center;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: all .3s ease-in-out;
-} */
 
 .btn-primary {
     --green: #1282a2;
     color: white;
     font-size: 17px;
-    padding: 12px 40px;
+    padding: 10px 25px;
     letter-spacing: 0.06em;
     position: relative;
     font-weight: 200;
     border-radius: 10px;
     overflow: hidden;
-    transition: all 0.4s;
+    transition: all 0.4s ease-in-out;
     margin: 0 auto 7rem 20px;
     text-align: center;
     line-height: 1.4em;
     border: 2px solid var(--green);
-    background: linear-gradient(to right, var(--primary) 1%, transparent 40%,transparent 60% , var(--primary) 100%);
+    /* background: linear-gradient(to right, var(--primary) 1%, transparent 40%,transparent 60% , var(--primary) 100%); */
     box-shadow: inset 0 0 5px var(--bgbody), 0 0 4px 1px var(--bgbody);
 }
   
@@ -527,16 +507,31 @@ a{
     content: "";
     position: absolute;
     left: -4em;
-    width: 4em;
+    width: 1.5em;
     height: 100%;
     top: 0;
     transition: transform .4s ease-in-out;
     background: linear-gradient(to right, transparent 1%, var(--bgbody) 40%, var(--bgbody) 60% , transparent 100%);
+    animation: infinite-animation 3s infinite;
+}
+
+
+@keyframes infinite-animation {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(22em);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
   
 .btn-primary:hover:before {
     transform: translateX(22em);
 }
+
 
 @media(min-width:768px){
     .hero .contenedor__rrss{
@@ -593,7 +588,7 @@ height: 2px;
 
 @media (min-width: 768px){
     .btn-primary{
-        width: 200px;
+        width: 250px;
         margin: 20px auto;
         z-index: 100;
     }
@@ -633,17 +628,17 @@ height: 2px;
     align-items: center;
     justify-content: center;
 }
-.imagenvector{
-    padding: 2rem;
-    margin: 2rem auto;
+/* .imagenvector{
+    width: 100%;
+    height: auto;
 }
 @media (min-width: 768px){
     .imagenvector{
-        width: 60%;
-        height: 60%;
+        width: 50%;
+        height: 50%;
         margin: 10rem auto;
     }
-}
+} */
 
 /* Imagen vector */
 
@@ -655,7 +650,7 @@ height: 2px;
     align-items: center;
     justify-content: center;
     gap: 30px;
-    margin-top: 12rem;
+    margin-top: 5rem;
 }
 
 .texto__servicios{
@@ -828,7 +823,7 @@ height: 2px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, 1fr);
     gap: 10px;
-    margin-top: 12rem;
+    margin-top: 5rem;
 }
 .gridSkills .content-icon{
     display: flex;
@@ -861,7 +856,6 @@ height: 2px;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(2, 1fr);
         gap: 20px;
-        margin-top: 15rem;
     }
 
     .gridSkills .item{
@@ -888,7 +882,7 @@ height: 2px;
         grid-template-rows: repeat(5, 250px);
         grid-auto-rows: 250px;
         gap: 20px;
-        margin-top: 12rem;
+        margin-top: 5rem;
 }
 .projects__item a{
     text-decoration: none;
