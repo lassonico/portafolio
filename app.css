@@ -48,6 +48,7 @@ h3{
 }
 p{
     font-size: 1.8rem;
+    font-weight: 100;
 }
 a{
     outline: none;
@@ -738,7 +739,7 @@ height: 2px;
   
   .flip-card-back {
     background: linear-gradient(120deg, var(--botons) 30%, var(--bgbody) 88%,
-       var(--botons) 40%, var(--bgbody) 78%);
+    var(--botons) 40%, var(--bgbody) 78%);
     color: white;
     transform: rotateY(180deg);
   }
@@ -746,6 +747,9 @@ height: 2px;
     margin: 10px 17px;
     font-size: 17px;
     text-align: justify;
+  }
+  .flip-card-back .card-text{
+    font-weight: 100;
   }
   @media(min-width:768px){
     .flip-card-back p{

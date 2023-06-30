@@ -11,18 +11,25 @@ function iniciarApp(){
 //Mejora la navegacion al scrollear y quita el id de la barra de navegacion
 
 function scrollNav() {
-  const enlaces = document.querySelectorAll('.navegacion-principal a');
+  const enlaces = document.querySelectorAll('.hero a');
   enlaces.forEach(enlace => {
-      enlace.addEventListener('click', function(e) {
+    enlace.addEventListener('click', function(e) {
+      e.preventDefault();
+      const seccionScroll = e.target.attributes.href.value;
+      const seccion = document.querySelector(seccionScroll);
 
-          e.preventDefault();
-          const seccionScroll = e.target.attributes.href.value;
-          const seccion = document.querySelector(seccionScroll);
-          seccion.scrollIntoView({ behavior: "smooth" });
-      });
+      const isMobile = window.innerWidth <= 768;
+      const offsetPixels = isMobile ? 100 : 0;
+      const posicion = seccion.offsetTop - offsetPixels;
+      
+      const options = {
+        top: posicion,
+        behavior: "smooth"
+      }
+      window.scrollTo(options);
+    });
   });
 }
-
 
 function navegacionScroll() {
   const elementoNavegacion = document.querySelector(".contenedor-nav");
