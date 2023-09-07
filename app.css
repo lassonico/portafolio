@@ -10,7 +10,7 @@
     --secondary: #155e75;
     --botons: #034078;
     --info: #873fe9;
-    --blanco: #f0f0f0;
+    --blanco: #fff;
     --optional: #fff;
     --bg: #000000e7;
     --bgbody: #1282a2;
@@ -27,16 +27,6 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-h2{
-    font-size: 2.2rem;
-    color: var(--gris);
-    text-align: center;
-}
-@media (max-width:768px) {
-    h2{
-        font-size: 2rem;
-    }
-}
 h3{
     font-size: 2.3rem;
     font-weight: 700;
@@ -51,7 +41,8 @@ h3{
 }
 p{
     font-size: 1.8rem;
-    font-weight: 200;
+    font-weight: 300;
+    text-align: center;
 }
 a{
     outline: none;
@@ -226,7 +217,7 @@ a{
     font-family: 'Poppins', sans-serif;
     text-align: left;
     font-size: 17px;
-    font-weight: 100;
+    font-weight: 300;
     margin: 0;
     font-display: swap;
 }
@@ -386,7 +377,7 @@ a{
     padding: 10px 25px;
     letter-spacing: 0.06em;
     position: relative;
-    font-weight: 200;
+    font-weight: 400;
     border-radius: 10px;
     overflow: hidden;
     transition: all 0.4s ease-in-out;
@@ -400,32 +391,7 @@ a{
     box-shadow: inset 0 0 5px var(--green), 0 0 5px 3px var(--green);
     color: var(--secondary);
 }
-  
-/* .btn-primary:before {
-    content: "";
-    position: absolute;
-    left: -4em;
-    width: 1.5em;
-    height: 100%;
-    top: 0;
-    transition: transform .4s ease-in-out;
-    background: linear-gradient(to right, transparent 1%, var(--bgbody) 40%, var(--bgbody) 60% , transparent 100%);
-    animation: infinite-animation 3s infinite;
-} */
 
-/* 
-@keyframes infinite-animation {
-    0% {
-        transform: translateX(0);
-    }
-    50% {
-        transform: translateX(22em);
-    }
-    100% {
-        transform: translateX(0);
-    }
-} */
-  
 .btn-primary:hover:before {
     transform: translateX(22em);
 }
@@ -450,7 +416,7 @@ a{
     text-decoration: none;
     text-transform: uppercase;
     outline: 0;
-    border: 1px solid var(--secondary);
+    border: 2px solid var(--gris);
     border-radius: 30px;
     padding: 7px 50px;
     font-display: swap;
@@ -488,9 +454,6 @@ a{
     bottom: 20px;
     right: -45px;
     background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
-    /* background: var(--secondary);  
-    background: -webkit-linear-gradient(to right, var(--secondary), var(--botons), var(--secondary)); 
-    background: linear-gradient(to right, var(--secondary), var(--botons), var(--secondary));  */
     border-radius: 50%;
     padding: 10px;
     cursor: pointer;
@@ -508,6 +471,12 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.subtitulo-seccion{
+    font-size: 32px;
+    font-weight: 900;
+    text-align: center;
 }
 
 /* --------Codigo cards SERVICIOS ------ */
@@ -664,15 +633,15 @@ margin: 0 auto;
     font-size: 1.5rem;
 }
 .gridSkills .item{
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     margin: 0 auto;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 1px 1px 12px #c4c4c4;
+    /* box-shadow: 1px 1px 12px #c4c4c4;
     background: var(--primary);
     background: -webkit-linear-gradient(to right, var(--blanco), var(--primary));
-    background: linear-gradient(to right, var(--blanco), var(--primary));
+    background: linear-gradient(to right, var(--blanco), var(--primary)); */
 }
 
 @media (min-width: 768px){
@@ -714,9 +683,10 @@ margin: 0 auto;
     cursor: pointer;
 }
 .projects__title{
-    font-size: 1.8rem;
+    font-size: 2rem;
     cursor: pointer;
     text-align: center;
+    color: var(--blanco);
 }
 .projects__title:hover{
     color: var(--bgbody);
