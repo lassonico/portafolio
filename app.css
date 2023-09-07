@@ -6,7 +6,7 @@
     --primartransparent: #121525e8;
     --cards: #15192c;
     /* --secondary: #41cadd; */
-    --gris: #292929;
+    --gris: #383838;
     --secondary: #155e75;
     --botons: #034078;
     --info: #873fe9;
@@ -51,7 +51,7 @@ h3{
 }
 p{
     font-size: 1.8rem;
-    font-weight: 100;
+    font-weight: 200;
 }
 a{
     outline: none;
@@ -98,7 +98,7 @@ a{
     }
 }
 .glitch{
-    font-size: 50px;
+    font-size: 45px;
     font-weight: 900;
     color: var(--secondary);
 }
@@ -379,9 +379,9 @@ a{
 }
 
 .btn-primary {
-    /* --gris: #292929; */
-    background-color: white;
+    background-color: transparent;
     color: var(--gris);
+    border: 1px solid #c9c9c9;
     font-size: 17px;
     padding: 10px 25px;
     letter-spacing: 0.06em;
@@ -393,10 +393,7 @@ a{
     margin: 0 auto 7rem 20px;
     text-align: center;
     line-height: 1.4em;
-    /* border: 2px solid var(--green); */
-    /* background: linear-gradient(to right, var(--primary) 1%, transparent 40%,transparent 60% , var(--primary) 100%); */
-    /* box-shadow: inset 0 0 5px var(--bgbody), 0 0 4px 1px var(--bgbody); */
-    box-shadow: 3px 3px 12px #cfcfcf;
+    box-shadow: 3px 3px 10px #e6e6e6;
 }
   
 .btn-primary:hover {
@@ -507,25 +504,11 @@ a{
 }
 .up.active{ right: 20px;}
 
-/* Imagen vector */
 .contenImg{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-/* .imagenvector{
-    width: 100%;
-    height: auto;
-}
-@media (min-width: 768px){
-    .imagenvector{
-        width: 50%;
-        height: 50%;
-        margin: 10rem auto;
-    }
-} */
-
-/* Imagen vector */
 
 /* --------Codigo cards SERVICIOS ------ */
 
@@ -565,60 +548,45 @@ a{
     background-color: white;
     padding: 1.5rem;
     border-radius: 10px;
-    width: 100%;
     height: auto;
     font-family: 'Poppins', sans-serif;
     box-shadow: 2px 2px 9px #dadada;
-  }
-  @media(min-width:768px){
-    .flip-card{
-        width: 20%;
-        height: 450px;
+}
+@media(min-width:768px){
+.flip-card{
+    width: 20%;
+    height: 520px;
     }
-  }
-  .title {
-    font-weight: 900;
-    font-size: 30px;
-    text-align: center;
-    color: var(--bgbody);
-  }
-  
-  
-  .flip-card img{
-    margin: 2rem auto ;
-  }
+}
+.flip-card .title-card{
+font-weight: 900;
+font-size: 30px;
+text-align: center;
+color: var(--bgbody);
+}
 
+@media (min-width: 768px){
+    .flip-card .title-card{
+        font-size: 23px;
+    }
+}
   
-  
-  @media(max-width:300px){
+.flip-card img{
+margin: 2rem auto ;
+}
+
+@media(max-width:300px){
     .contenedor-cards{
         gap: 70px;
     }
     .flip-card {
         margin-bottom: 60px;
     }
-    .flip-card-front, .flip-card-back{
-        height: 320px;
-    }
-  }
-  
+}
 
-  @media(min-width:768px){
-    .flip-card-back p{
-        font-size: 12px;
-        
-    }
-  }
-  
-  @media (max-width: 300px){
-    .flip-card-back{
-        padding: 10px 0;
-    }
-  }
-
-  .flip-card-front .icon{
-    margin: 0 auto;
-  }
+.flip-card .icon{
+margin: 0 auto;
+}
 
 /* -------SOBRE MI -------- */
 
