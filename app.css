@@ -6,8 +6,9 @@
     --primartransparent: #121525e8;
     --cards: #15192c;
     /* --secondary: #41cadd; */
-    --gris: #383838;
-    --secondary: #155e75;
+    --gris: #444;
+    /* --secondary: #155e75; */
+    --secondary: #2978b5;
     --botons: #034078;
     --info: #873fe9;
     --blanco: #fff;
@@ -931,28 +932,20 @@ margin: 0 auto;
     flex-direction: column;
     justify-content: center;
     position: relative;
-    width: 100%;
+   
     height: auto;
     background-color: var(--blanco);
-    color: var(--gris);
     margin: 0;
-    padding-top: 30px;
+    padding: 30px 15px 0 15px;
 }
 
-.footer__contenedor .footer h2, h4{
-    color: white;
-    text-align: start;
-    margin: 20px 10px;
-}
-.footer__contenedor .footer h2{
-    text-align: start;
+.footer h2{
+    text-align: left;
     color: var(--secondary);
-    font-size: 2.3rem;
-    font-weight: 900;
+    font-weight: bold;
+    font-size: 25px;
 }
-.footer h4{
-    font-size: 19px;
-}
+
 .footer .footer__contenedor .sigueme{
     text-align: center;
     margin: 30px auto;
@@ -994,8 +987,7 @@ margin: 0 auto;
 .footer p{
     font-family: 'Poppins', sans-serif;
     text-align: start;
-    margin-left: 10px;
-    font-weight: 100;
+    font-weight: 300;
 }
 @media (min-width: 768px){
     .footer .footer__contenedor{
@@ -1008,7 +1000,8 @@ margin: 0 auto;
         gap: 50px;
     }
     .footer h2, h4{
-        color: white;
+        color: var(--secondary);
+        font-size: 30px;
         text-align: start;
     }
     .footer .footer__contenedor p{
