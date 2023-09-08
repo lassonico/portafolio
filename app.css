@@ -2,7 +2,7 @@
 
 :root{
     /* --primary: #121525; */
-    --primary: #f1f5f9;
+    --primary: #fff;
     --primartransparent: #121525e8;
     --cards: #15192c;
     /* --secondary: #41cadd; */
@@ -11,7 +11,7 @@
     --secondary: #2978b5;
     --botons: #034078;
     --info: #873fe9;
-    --blanco: #fff;
+    --blanco: #f1f5f9;
     --optional: #fff;
     --bg: #000000e7;
     --bgbody: #1282a2;
@@ -41,9 +41,16 @@ h3{
     }
 }
 p{
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     font-weight: 300;
     text-align: center;
+    line-height: 1.5;
+    color: var(--gris);
+}
+@media (min-width: 768px){
+    p{
+        font-size: 1.4rem;
+    }
 }
 a{
     outline: none;
@@ -59,6 +66,25 @@ a{
 }
 
 /* -------  HEADER -------  */
+.contenedor-nav .contenedor-logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0;
+}
+.text-soynico{
+    color: var(--cards);
+    font-size: 25px;
+    font-weight: 900;
+    line-height: 0;
+    margin: 0;
+    z-index: 1;
+}
+@media(min-width: 768px){
+    .text-soynico{
+        font-size: 40px;
+    }
+}
 .hero{
     display: flex;
     flex-direction: column;
@@ -218,15 +244,15 @@ a{
     color: var(--gris);
     font-family: 'Poppins', sans-serif;
     text-align: left;
-    font-size: 17px;
+    font-size: 1.2rem;
     font-weight: 300;
     margin: 0;
-    font-display: swap;
 }
 @media (min-width:768px){
     .hero .text-hero{
         text-align: center;
         margin-top: 15px;
+        font-size: 1.4rem;
     }
 }
 .contenido-hero{
@@ -275,7 +301,7 @@ a{
     }
 }
 .logotipo{
-    width: 14%;
+    width: 20%;
     margin-left: 10px;
     margin-top: 5px;
     z-index: 1;
@@ -375,7 +401,7 @@ a{
     background-color: transparent;
     color: var(--gris);
     border: 1px solid #c9c9c9;
-    font-size: 17px;
+    font-size: 1.4rem;
     padding: 10px 25px;
     letter-spacing: 0.06em;
     position: relative;
@@ -388,15 +414,6 @@ a{
     line-height: 1.4em;
     box-shadow: 3px 3px 10px #e6e6e6;
 }
-  
-.btn-primary:hover {
-    box-shadow: inset 0 0 5px var(--green), 0 0 5px 3px var(--green);
-    color: var(--secondary);
-}
-
-.btn-primary:hover:before {
-    transform: translateX(22em);
-}
 
 
 @media(min-width:768px){
@@ -408,7 +425,7 @@ a{
 .btn-secundary{
     align-items: center;
     background-color: transparent;
-    color: var(--cards);
+    color: var(--secondary);
     cursor: pointer;
     display: flex;
     font-family: 'Poppins', sans-serif;
@@ -476,10 +493,16 @@ a{
 }
 
 .subtitulo-seccion{
-    font-size: 32px;
+    font-size: 1.7rem;
     font-weight: 900;
     text-align: center;
     color: var(--gris);
+}
+
+@media(min-width: 768px){
+    .subtitulo-seccion{
+        font-size: 2.5rem;
+    }
 }
 
 /* --------Codigo cards SERVICIOS ------ */
@@ -506,7 +529,6 @@ a{
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
-        margin-top: 16rem;
     }
     .texto__servicios{
         width: 50%;
@@ -520,19 +542,49 @@ a{
     background-color: white;
     padding: 1.5rem;
     border-radius: 10px;
-    height: auto;
-    font-family: 'Poppins', sans-serif;
+    width: 90%;
+    
     box-shadow: 2px 2px 9px #dadada;
+    transition: all .4s ease-in-out;
+    z-index: 1;
 }
+
+.card-text{
+    display: block;
+    /* margin-top: -100%; */
+    /* opacity: 0; */
+    margin: 0 auto;
+    background-color: var(--primary);
+    transition: all .4s ease-in-out;
+    z-index: -1;
+}
+
 @media(min-width:768px){
 .flip-card{
-    width: 20%;
-    height: 520px;
+    width: 30%;
+    
     }
 }
+
+@media(min-width: 960px){
+    .flip-card{
+        width: 20%;
+        
+    }
+}
+/* 
+.flip-card:hover .card-text{
+    opacity: 1;
+    top: 100%;
+} */
+
+/* .flip-card:hover{
+    height: 100%;
+} */
+
 .flip-card .title-card{
 font-weight: 900;
-font-size: 30px;
+font-size: 1.5rem;
 text-align: center;
 color: var(--secondary);
 }
@@ -575,8 +627,8 @@ margin: 0 auto;
 }
 
 .text-sobremi::first-letter{
-    font-size: 27px;
-    font-weight: bold;
+    font-size: 1.4rem;
+    font-weight: 900;
     color: var(--secondary);
 }
 .proyect-text{
@@ -686,7 +738,7 @@ margin: 0 auto;
     margin: 0 auto;
     padding: 10px;
     width: 60%;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     transition: all .3s ease-in-out;
 }
 .projects__title:hover{
@@ -780,7 +832,7 @@ margin: 0 auto;
     justify-content: center;
     transform: scale(0);
     opacity: 0;
-    transition: transform .4s ease-in-out;
+    transition: all .4s ease-in-out;
 }
 
 .projects__item:hover .projects__hover{
@@ -824,7 +876,7 @@ margin: 0 auto;
     color: var(--gris);
     font-family: 'Poppins', sans-serif;
     text-align: left;
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     margin: 10px 0;
 }
 .contenedor-input{
@@ -836,7 +888,7 @@ margin: 0 auto;
     border: none;
     background-color: var(--blanco) !important;
     color: var(--gris);
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     padding: 1rem 0;
     outline: none;
     border-radius: 0;
@@ -851,7 +903,7 @@ margin: 0 auto;
     border: none;
     background-color: var(--blanco) !important;
     color: var(--gris);
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     padding: 1rem 0;
     border-bottom: 1px solid #d8d8d8;
     border-radius: 0;
@@ -879,7 +931,7 @@ margin: 0 auto;
     display: block;
     margin: 20px auto;
     width: 90%;
-    font-size: 17px;
+    font-size: 1.3rem;
     font-weight: 400;
     text-align: center;
     border-radius: 10px;
@@ -898,7 +950,7 @@ margin: 0 auto;
     margin: 20px auto;
     border: 2px solid var(--cards);
     width: 90%;
-    font-size: 17px;
+    font-size: 1.3rem;
     font-weight: 400;
     text-align: center;
     border-radius: 10px;
@@ -928,7 +980,7 @@ margin: 0 auto;
 .text-privacy{
     color: var(--secondary);
     text-align: center;
-    font-size: 14px;
+    font-size: 1.2rem;
     margin: 0;
     padding: 0;
 }
@@ -951,7 +1003,7 @@ margin: 0 auto;
     text-align: left;
     color: var(--secondary);
     font-weight: bold;
-    font-size: 23px;
+    font-size: 1.7rem;
 }
 
 .footer .footer__contenedor .sigueme{
@@ -1009,7 +1061,7 @@ margin: 0 auto;
     }
     .footer h2, h4{
         color: var(--secondary);
-        font-size: 30px;
+        font-size: 2.2rem;
         text-align: start;
     }
     .footer .footer__contenedor p{
