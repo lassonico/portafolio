@@ -33,10 +33,10 @@
 <body>
     <header class="hero portada" id="inicio">
         <div class="contenedor-nav down">
-            <div class="contenedor-logo">
+            <a href="/" class="contenedor-logo">
                 <img src="./img/LogoSoynico2.svg" alt="logotipo de la empresa" width="45" height="45" class="logotipo">
                 <h3 class="text-soynico">soynico</h3>
-            </div>
+            </a>
             <nav class="navegacion-principal">
                 <a href="#servicios" class="enlace">Qué hago</a>
                 <a href="#sobremi" class="enlace">Sobre mi</a>
@@ -118,10 +118,8 @@
             <div class="flip-card" data-aos="fade-up" data-aos-duration="1000">
                 <img src="./img/svgs/webdev.svg" width="60" height="60" class="salto1" alt="imagen icono web">
                 <h3 class="title-card">Desarrollo web</h3>
-                <div class="card-text">
-                    <p >Desarrollo sitios web, personalizados y adaptados a dispositivos móviles, para empresas o personas naturales. Intuitivas, modernas y agradables para tus clientes.
-                    Landing pages, portafolios o tarjetas de presentación y/o invitación y mucho más. Conectadas a tus redes sociales y WhatsApp. Correos corporativos, alojamiento y mantenimiento.</p>
-                </div>
+                <p class="card-text">Desarrollo sitios web, personalizados y adaptados a dispositivos móviles, para empresas o personas naturales. Intuitivas, modernas y agradables para tus clientes.
+                Landing pages, portafolios o tarjetas de presentación y/o invitación y mucho más. Conectadas a tus redes sociales y WhatsApp. Correos corporativos, alojamiento y mantenimiento.</p>
             </div>
 
             <div class="flip-card" data-aos="fade-up" data-aos-duration="1000">
@@ -337,6 +335,8 @@
         <p class="texto__servicios">Todos los proyectos que realizo, se desarrollan en base a la filosofía movil first, es decir adaptados a dispositivos móviles como prioridad.</p>
         <div class="contenImg">
             <img src="img/Celular.png" alt="Imagen Resposive desing" width="100%" height="auto" class="imagencelular">
+            <div class="contendorimagefondo"></div>
+            <img src="img/imgbgcelu.jpg" alt="imagen fondo celular" class="fondocelular">
         </div>
     </div>
     
@@ -403,6 +403,7 @@
                 <p>De lunes a viernes: De 8:00 AM a 6:00 PM</p>
                 <p>Sábados: De 9:00 AM a 1:00 PM</p>
             </div>
+
             <div class="footer__contacto">
                 <h2>Contácto</h2>
                 <p>Dirección: Cl 17 No 6 - 57 Of 413 Ed ToGo</p>
@@ -455,6 +456,8 @@
                           </svg>
                     </a>
                 </div>
+                <img src="/img/LogoSoynico2.svg" width="50" height="50" class="logtipo-footer">
+                <h3 class="text-logofooter">soynico</h3>
             </div>
         </div>
         <p class="footer__copy">Todos los derechos reservados<span class="nombre"> Soy Nícola &copy;2023</span></p>
@@ -514,6 +517,6 @@
         AOS.init();
     </script>
     <script src="sw.js"></script>
-    <script src="appmin.js" defer></script>
+    <script src="app.js" defer></script>
 </body>
 </html>
