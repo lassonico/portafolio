@@ -11,13 +11,13 @@ function iniciarApp(){
 //Mejora la navegacion al scrollear y quita el id de la barra de navegacion
 
 function scrollNav() {
-  const enlaces = document.querySelectorAll('body a');
+  const enlaces = document.querySelectorAll('header a');
   enlaces.forEach(enlace => {
     enlace.addEventListener('click', function(e) {
       e.preventDefault();
       const seccionScroll = e.target.attributes.href.value;
       const seccion = document.querySelector(seccionScroll);
-
+      // agrega un espacio en la seccion para visualizarla mejor 
       const isMobile = window.innerWidth <= 768;
       const offsetPixels = isMobile ? 100 : 0;
       const posicion = seccion.offsetTop - offsetPixels;

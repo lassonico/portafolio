@@ -1135,8 +1135,9 @@ margin: 0 auto;
     position: fixed;
     bottom: 40px;
     left: -60px;
-    border-radius: 50%;
-    background-color: #25d366;
+    border-radius: 13px;
+    /* background-color: #25d366; */
+    background-image: linear-gradient(to top, #25d366 0%, #02c549 100%);
     width: 45px;
     height: 45px;
     display: flex;
@@ -1196,7 +1197,10 @@ margin: 0 auto;
 
 .modal__title{
     line-height: 0;
-    margin-top: 10px;
+    font-size: 2.3rem;
+    margin: 2rem;
+    text-align: center;
+    color: var(--gris);
 }
 
 .modal .cerrar{
@@ -1210,7 +1214,7 @@ margin: 0 auto;
 
 .modal p{
     text-align: center;
-    color: var(--primary);
+    color: var(--gris);
     margin: 10px auto 20px auto;
     font-size: 18px;
     font-weight: 700;
@@ -1219,7 +1223,7 @@ margin: 0 auto;
 .btn__aceptar{
     display: block;
     border: none;
-    background-color: var(--primary);
+    background-color: var(--secondary);
     color: white;
     font-size: 17px;
     padding: 10px 30px;
@@ -1236,7 +1240,7 @@ margin: 0 auto;
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .sk-circle {
@@ -1251,6 +1255,7 @@ margin: 0 auto;
     position: absolute;
     left: 0;
     top: 0;
+    margin-top: 15rem;
   }
   .sk-circle .sk-child:before {
     content: '';
