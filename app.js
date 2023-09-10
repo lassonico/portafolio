@@ -3,21 +3,24 @@ document.addEventListener('DOMContentLoaded', function(){
 });
 
 function iniciarApp(){
-  scrollNav();
+  scrollNavigate();
   navegacionScroll();
-  interaccionNav()
+  interaccionNav();
+  botonhero();
+  botonsoy();
 }
 
 //Mejora la navegacion al scrollear y quita el id de la barra de navegacion
 
-function scrollNav() {
-  const enlaces = document.querySelectorAll('navegacion-principal a');
+function scrollNavigate(){
+  const enlaces = document.querySelectorAll('.contenedor-nav a');
+  
   enlaces.forEach(enlace => {
     enlace.addEventListener('click', function(e) {
       e.preventDefault();
       const seccionScroll = e.target.attributes.href.value;
       const seccion = document.querySelector(seccionScroll);
-      // agrega un espacio en la seccion para visualizarla mejor 
+      
       const isMobile = window.innerWidth <= 768;
       const offsetPixels = isMobile ? 100 : 0;
       const posicion = seccion.offsetTop - offsetPixels;
@@ -98,6 +101,51 @@ function interaccionNav(){
   });
   btnham.addEventListener('click', clickNav)
 }
+
+//------ BOTONES NAV ---------
+
+function botonhero() {
+  const primerbtn = document.querySelector('.primer-boton'); // Cambia el selector según tu estructura HTML
+  
+  primerbtn.addEventListener('click', function(e) {
+    e.preventDefault();
+    const seccionScroll = e.target.attributes.href.value;
+    const seccion = document.querySelector(seccionScroll);
+    
+    const isMobile = window.innerWidth <= 768;
+    const offsetPixels = isMobile ? 100 : 0;
+    const posicion = seccion.offsetTop - offsetPixels;
+    
+    const options = {
+      top: posicion,
+      behavior: "smooth"
+    }
+    window.scrollTo(options);
+  });
+}
+
+// Función para la segunda sección
+function botonsoy() {
+  const segundobtn = document.querySelector('.segundo-btn'); // Cambia el selector según tu estructura HTML
+  
+  segundobtn.addEventListener('click', function(e) {
+    e.preventDefault();
+    const seccionScroll = e.target.attributes.href.value;
+    const seccion = document.querySelector(seccionScroll);
+    
+    const isMobile = window.innerWidth <= 768;
+    const offsetPixels = isMobile ? 100 : 0;
+    const posicion = seccion.offsetTop - offsetPixels;
+    
+    const options = {
+      top: posicion,
+      behavior: "smooth"
+    }
+    window.scrollTo(options);
+  });
+}
+
+//------ BOTONES NAV ---------
     
   // INTERACCION FORM
     
