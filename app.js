@@ -11,7 +11,7 @@ function iniciarApp(){
 //Mejora la navegacion al scrollear y quita el id de la barra de navegacion
 
 function scrollNav() {
-  const enlaces = document.querySelectorAll('header a');
+  const enlaces = document.querySelectorAll('navegacion-principal a');
   enlaces.forEach(enlace => {
     enlace.addEventListener('click', function(e) {
       e.preventDefault();

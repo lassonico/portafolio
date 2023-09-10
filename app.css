@@ -550,10 +550,9 @@ a{
     flex-direction: column;
     align-items: center;
     background-color: white;
-    padding: 1.5rem;
+    padding: 1.5rem 1.5rem 3rem 1.5rem;
     border-radius: 10px;
     width: 90%;
-    
     box-shadow: 2px 2px 9px #dadada;
     transition: all .4s ease-in-out;
     z-index: 1;
@@ -1126,7 +1125,7 @@ margin: 0 auto;
 
 .whatsapp{
     position: fixed;
-    bottom: 40px;
+    bottom: 32px;
     left: -60px;
     border-radius: 13px;
     /* background-color: #25d366; */
