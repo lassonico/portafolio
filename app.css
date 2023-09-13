@@ -846,6 +846,7 @@ margin: 0 auto;
     font-size: 30px;
 }
 
+
 .imagencelular{
     position: relative;
     width: 240px;
@@ -854,6 +855,56 @@ margin: 0 auto;
     filter: drop-shadow(.5px .5px 5px #c9c9c9);
 }
 
+.contenImg{
+    width: 150px;
+    height: 295px;
+    position: relative;
+    margin: 5rem auto;
+    overflow: hidden;
+    border-radius: 20px;
+    z-index: 10;
+    border: 5px solid #353535;
+    box-shadow: 3px 3px 16px gray;
+    transform: rotateX(26deg) rotateY(8deg) rotateZ(334deg) skewY(5deg);
+}
+
+.img-fondo-celular{
+    position: absolute;
+    width:140px;
+    top: 0;
+    left: 50%;
+    border-radius: 20px;
+    transform: translateX(-50%);
+    z-index: 1;
+    animation: topdown 2.5s ease-in-out infinite;
+}
+
+.img-celular{
+    position: absolute;
+    top: -1.3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    width: 320px;
+}
+
+@keyframes topdown{
+    0%{
+        top: 0;
+    }
+    20%{
+        top: 0;
+    }
+    50%{
+        top: -9.5rem;
+    }
+    75%{
+        top: -9.5rem;
+    }
+    100%{
+        top: 0;
+    }
+}
 
 /* .fondocelular{
     position: absolute;
