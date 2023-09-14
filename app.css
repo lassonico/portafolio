@@ -1,15 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700;900&display=swap');
 
 :root{
-    /* --primary: #121525; */
     --primary: #fff;
     --primartransparent: #121525e8;
     --cards: #15192c;
-    /* --secondary: #41cadd; */
     --gris: #444;
-    /* --secondary: #155e75; */
     --secondary: #4abcc5;
-    /* --secondary: #2978b5; */
     --botons: #034078;
     --info: #873fe9;
     --blanco: #f1f5f9;
@@ -68,6 +64,7 @@ a{
 }
 
 /* -------  HEADER -------  */
+
 .contenedor-nav .contenedor-logo{
     display: flex;
     flex-direction: row;
@@ -75,7 +72,19 @@ a{
     gap: 0;
     text-decoration: none;
     cursor: pointer;
+    width: 100%;
+    height: 60px;
+    background-color: var(--primary);
+    z-index: 10;
 }
+
+.logotipo{
+    width: 10%;
+    margin-left: 10px;
+    margin-top: 5px;
+    z-index: 10;
+}
+
 .text-soynico{
     color: var(--gris);
     font-size: 25px;
@@ -101,12 +110,10 @@ a{
 
 .hero .text-hello{
     color: var(--gris);
-    font-family: 'Poppins', sans-serif;
     text-align: left;
     font-size: 30px;
     font-weight: 800;
     margin: 0;
-    font-display: swap;
 }
 
 @media (min-width: 768px){
@@ -122,7 +129,6 @@ a{
 .glitch{
     font-size: 45px;
     font-weight: 900;
-    /* color: var(--secondary); */
     background: -webkit-linear-gradient(var(--secondary), #144175);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -132,17 +138,6 @@ a{
         font-size: 70px;
     }
 }
-.entrada{
-    animation-name: entrada;
-    animation-duration: 1.5s;
-    animation-timing-function: ease-in-out;
-}
-@keyframes entrada{
-    0%{opacity: 0; transform: translateX(-60px);}
-    60%{opacity: 0;}
-    100%{opacity: 1;transform: translateX(0px);}
-}
-
 .entrada{
     animation-name: entrada;
     animation-duration: 1.5s;
@@ -215,9 +210,9 @@ a{
     animation-timing-function: ease-in-out;
 }
 @keyframes entrada_e{
-    0%{opacity: 0; transform: translateX(60px);}
+    0%{opacity: 0; transform: translateY(-60px);}
     60%{opacity: 0;}
-    100%{opacity: 1;transform: translateX(0px);}
+    100%{opacity: 1;transform: translateY(0px);}
 }
 .down{
     animation-name: downy;
@@ -249,7 +244,6 @@ a{
 
 .hero .text-hero{
     color: var(--gris);
-    font-family: 'Poppins', sans-serif;
     text-align: left;
     font-size: 1.4rem;
     font-weight: 300;
@@ -270,17 +264,9 @@ a{
     padding: 0 20px;
     margin-bottom: 20px;
 }
-.contenedor-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 4px 0;
-    position: relative;
-    outline: none;
-}
 
 .contenedor-nav a{
-    z-index: 100;
+    z-index: -1;
     outline: none;
     width: auto;
 }
@@ -289,10 +275,6 @@ a{
     .hero .subtitle{
         text-align: center;
     }
-    .contenedor-nav{
-        padding: 0 10px;
-        background-color: transparent;
-    }
 }
 
 .contenedor-nav .icon{
@@ -300,6 +282,7 @@ a{
     top: 10px;
     right: 10px;
     outline: none;
+    z-index: 10;
 }
 
 @media  (min-width: 768px) {
@@ -307,15 +290,9 @@ a{
         display: none;
     }
 }
-.logotipo{
-    width: 20%;
-    margin-left: 10px;
-    margin-top: 5px;
-    z-index: 1;
-}
 
 .contenedor-nav{
-    z-index: 100;
+    z-index: 10;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -325,29 +302,27 @@ a{
     top: 0;
     right: 0;
 }
-.scroll{
-    background-color: var(--primary);
-}
+
 .navegacion-principal{
+    background-color: var(--primary);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     position: absolute;
-    top: 0;
-    right: -103%;
-    gap: 30px;
-    padding-top: 32%;
-    background-color: var(--primary);
-    backdrop-filter: blur(8px);
+    top: -500px;
+    right: 0;
+    /* right: -103%; */
+    padding-top: 20%;
     width: 100%;
-    height: 100vh;
+    height: auto;
     transition-property: all;
-    transition-duration: .4s;
+    transition-duration: .5s;
     transition-timing-function: ease-in-out;
+    z-index: 0;
 }
 .navegacion-principal.active{
-    right: 0;
+    top: 0;
 }
 
 @media (min-width: 768px){
@@ -360,6 +335,7 @@ a{
         left: 0;
         flex-direction: row;
         padding: 0;
+        padding: 0 10px;
         background-color: transparent;
     }
     .navegacion-principal{
@@ -370,26 +346,29 @@ a{
         height: auto;
         justify-content: flex-end;
         box-shadow: none;
+        gap: 30px;
+        z-index: 0;
     }
 }
 .navegacion-principal a{
     text-decoration: none;
     color: var(--gris);
     font-size: 2rem;
-    font-family: 'Poppins', sans-serif;
     font-weight: bold;
     cursor: pointer;
     margin: 0;
-    padding: 17px 5px;
+    padding: 17px 0;
     width: 100%;
     text-align: center;
-    font-display: swap;
+    border-bottom: 1px solid #c9c9c9af;
+    z-index: 0;
 }
 @media (min-width: 768px){
     .navegacion-principal a{
         color: var(--gris);
         width: auto;
         text-align: end;
+        border: none;
     }
 }
 .navegacion-principal a:hover{

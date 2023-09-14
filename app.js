@@ -35,19 +35,12 @@ function scrollNavigate(){
 }
 
 function navegacionScroll() {
-  const elementoNavegacion = document.querySelector(".contenedor-nav");
   const elementoReferencia = document.querySelector(".portada");
   const btnUp = document.querySelector('.up')
   const wbtn = document.querySelector('.whatsapp')
 
   function revisarPosicion() {
     const posicionY = elementoReferencia.getBoundingClientRect().bottom;
-
-    if(scrollY >= 70){
-      elementoNavegacion.classList.add("scroll");
-    }else{
-      elementoNavegacion.classList.remove("scroll");
-    }
     
     if (posicionY <= 761) {
       btnUp.classList.add("active");
