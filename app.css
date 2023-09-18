@@ -191,8 +191,8 @@ a{
     margin: 0;
     padding: 17px 0 17px 20px;
     width: 100%;
-    text-align: left;
-    border-bottom: 1px solid #c9c9c99a;
+    text-align: center;
+    /* border-bottom: 1px solid #c9c9c99a; */
     z-index: 0;
 }
 @media (min-width: 768px){
