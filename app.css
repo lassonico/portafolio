@@ -154,6 +154,10 @@ a{
     top: 0;
 }
 
+.navegacion-principal .inicio{
+    display: block;
+}
+
 @media (min-width: 768px){
     .logotipo{
         width: 80px;
@@ -168,7 +172,7 @@ a{
         background-color: transparent;
         box-shadow: none;
     }
-    .inicio{
+    .navegacion-principal .inicio{
         display: none;
     }
     .navegacion-principal{
@@ -186,9 +190,7 @@ a{
 /* .navegacion-principal :nth-child(1){
     border-top:  1px solid #c9c9c99a;
 } */
-.inicio{
-    display: block;
-}
+
 .navegacion-principal a{
     text-decoration: none;
     color: var(--gris);
