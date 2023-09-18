@@ -138,7 +138,8 @@ a{
     top: -500px;
     right: 0;
     /* right: -103%; */
-    padding-top: 6.5rem;
+    padding-top: 9rem;
+    padding-bottom: 4rem;
     width: 100%;
     height: auto;
     transition-property: all;
@@ -179,9 +180,9 @@ a{
         z-index: 0;
     }
 }
-.navegacion-principal :nth-child(1){
+/* .navegacion-principal :nth-child(1){
     border-top:  1px solid #c9c9c99a;
-}
+} */
 .navegacion-principal a{
     text-decoration: none;
     color: var(--gris);
@@ -189,7 +190,7 @@ a{
     font-weight: 200;
     cursor: pointer;
     margin: 0;
-    padding: 17px 0 17px 20px;
+    padding: 23px 0;
     width: 100%;
     text-align: center;
     /* border-bottom: 1px solid #c9c9c99a; */
