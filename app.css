@@ -168,6 +168,9 @@ a{
         background-color: transparent;
         box-shadow: none;
     }
+    .inicio{
+        display: none;
+    }
     .navegacion-principal{
         position: static;
         flex-direction: row;
@@ -183,6 +186,9 @@ a{
 /* .navegacion-principal :nth-child(1){
     border-top:  1px solid #c9c9c99a;
 } */
+.inicio{
+    display: block;
+}
 .navegacion-principal a{
     text-decoration: none;
     color: var(--gris);
