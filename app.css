@@ -858,20 +858,20 @@ margin: 0 auto;
     overflow: hidden;
     border-radius: 15px;
     z-index: 10;
-    border: 2px solid #353535;
+    border: 1px solid #353535;
     box-shadow: 3px 3px 16px #b4b4b4;
-    transform: rotateX(26deg) rotateY(8deg) rotateZ(343deg) skewY(5deg);
+    transform: rotateX(1deg) rotateY(8deg) rotateZ(343deg) skewY(1deg);
 }
 
 .img-fondo-celular{
     position: absolute;
-    width:129px;
-    top: 0;
+    width:121px;
+    top: .4rem;
     left: 50%;
     border-radius: 15px;
     transform: translateX(-50%);
     z-index: 1;
-    animation: topdown 7s ease-in-out infinite;
+    /* animation: topdown 17s ease-in-out infinite; */
 }
 
 .img-celular{
@@ -891,10 +891,10 @@ margin: 0 auto;
         top: 0;
     }
     50%{
-        top: -9.5rem;
+        top: -2565px;
     }
     75%{
-        top: -9.5rem;
+        top: -2565px;
     }
     100%{
         top: 0;
