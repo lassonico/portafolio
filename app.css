@@ -138,8 +138,8 @@ a{
     top: -500px;
     right: 0;
     /* right: -103%; */
-    padding-top: 9rem;
-    padding-bottom: 4rem;
+    padding-top: 8rem;
+    padding-bottom: 1rem;
     width: 100%;
     height: auto;
     transition-property: all;
@@ -187,9 +187,6 @@ a{
         z-index: 0;
     }
 }
-/* .navegacion-principal :nth-child(1){
-    border-top:  1px solid #c9c9c99a;
-} */
 
 .navegacion-principal a{
     text-decoration: none;
@@ -198,23 +195,20 @@ a{
     font-weight: 200;
     cursor: pointer;
     margin: 0;
-    padding: 23px 0;
+    padding: 1rem 0;
     width: 100%;
     text-align: center;
-    /* border-bottom: 1px solid #c9c9c99a; */
     z-index: 0;
 }
 @media (min-width: 768px){
-    .navegacion-principal :nth-child(1){
-        border-top:  none;
-    }
+
     .navegacion-principal a{
         color: var(--gris);
         width: auto;
         text-align: end;
         border: none;
         font-size: 2rem;
-        font-weight: bold;
+        font-weight: 900;
     }
 }
 .navegacion-principal a:hover{
@@ -329,7 +323,7 @@ a{
 
 .entrada_enlace{
     animation-name: entrada_e;
-    animation-duration: 1s;
+    animation-duration: .8s;
     animation-timing-function: ease-in-out;
 }
 @keyframes entrada_e{
@@ -858,7 +852,6 @@ margin: 0 auto;
     overflow: hidden;
     border-radius: 15px;
     z-index: 10;
-    border: 1px solid #353535;
     box-shadow: 3px 3px 16px #b4b4b4;
     transform: rotateX(1deg) rotateY(8deg) rotateZ(343deg) skewY(1deg);
 }
@@ -866,12 +859,12 @@ margin: 0 auto;
 .img-fondo-celular{
     position: absolute;
     width:121px;
-    top: .4rem;
+    top: .5rem;
     left: 50%;
     border-radius: 15px;
     transform: translateX(-50%);
     z-index: 1;
-    /* animation: topdown 17s ease-in-out infinite; */
+    animation: topdown 32s ease-out infinite;
 }
 
 .img-celular{
@@ -887,14 +880,8 @@ margin: 0 auto;
     0%{
         top: 0;
     }
-    20%{
-        top: 0;
-    }
     50%{
-        top: -2565px;
-    }
-    75%{
-        top: -2565px;
+        top: -2390px;
     }
     100%{
         top: 0;
