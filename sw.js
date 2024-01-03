@@ -7,22 +7,24 @@ if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
       navigator.serviceWorker.register('sw.js')
         .then(registration => {
-          console.log('Service worker registered:', registration);
+          console.log('Service worker registrado ok:', registration);
         })
         .catch(error => {
-          console.log('Service worker registration failed:', error);
+          console.log('Fallo el registro de SW:', error);
         });
     });
   }
 
   // 2. Creando el archivo SW.js:
   
-  const CACHE_NAME = 'my-site-cache-v1';
+  const CACHE_NAME = 'soynico-click-cache-v1';
   const urlsToCache = [
     'aos.js',
     'appmin.js',
-    'lord.js',
-    'modernizer.js'
+    'modernizer.js',
+    'appmin.css',
+    'normalize.css',
+    'img/smartphone.png'
   ];
   
   self.addEventListener('install', event => {
