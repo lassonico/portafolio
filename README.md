@@ -25,8 +25,12 @@ Puedes ver una demostración de mi portafolio en https://soynico.netlify.app
 
 ## Capturas de Pantalla
 
-![Captura de Pantalla 1](screenshots/screenshot1.png)
-![Captura de Pantalla 2](screenshots/screenshot2.png)
+![Captura de Pantalla 1 img/proyectos/controGastos.jpg
+![Captura de Pantalla 2 img/proyectos/cotizadorCryptos.jpg
+![Captura de Pantalla 3 img/proyectos/presutuestoApp.jpg
+![Captura de Pantalla 4 img/proyectos/proactivoSimulador.jpg
+![Captura de Pantalla 5 img/proyectos/recetasapp.jpg
+
 
 ## Cómo Usar
 
