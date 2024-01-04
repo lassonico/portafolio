@@ -343,12 +343,12 @@ function cerrarModal(){
   modalContent.classList.add('oculto');
   speener.classList.add('oculto');
   window.scrollTo(0,0);
-};
+}
 
 function insertDate(){
   const contentCopy = document.querySelector(".copytext");
   const year = new Date().getFullYear();
-  const textCopy = document.createElement('P');
-  textCopy.innerHTML = `<p class="footer__copy">Todos los derechos reservados<span class="nombre"><strong>Soy Nícola &copy; ${year}</strong></span></p>`;
+  const textCopy = document.createElement('DIV');
+  textCopy.innerHTML = `<p class="footer__copy">Todos los derechos reservados<span class="nombre"><strong>SoyNíco &copy;${year}</strong></span></p>`;
   contentCopy.appendChild(textCopy);
 }
