@@ -349,6 +349,6 @@ function insertDate(){
   const contentCopy = document.querySelector(".copytext");
   const year = new Date().getFullYear();
   const textCopy = document.createElement('DIV');
-  textCopy.innerHTML = `<p class="footer__copy">Todos los derechos reservados<span class="nombre"><strong>SoyNíco &copy;${year}</strong></span></p>`;
+  textCopy.innerHTML = `<p class="footer__copy">Todos los derechos reservados<span class="nombre"><strong> SoyNíco &copy;${year}</strong></span></p>`;
   contentCopy.appendChild(textCopy);
 }
