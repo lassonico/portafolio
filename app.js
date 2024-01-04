@@ -8,6 +8,7 @@ function iniciarApp(){
   interaccionNav();
   botonhero();
   botonsoy();
+  insertDate();
 }
 
 //Mejora la navegacion al scrollear y quita el id de la barra de navegacion
@@ -311,9 +312,9 @@ function enviandoForm(e){
         modalContent.classList.remove('oculto');
       }, 4000)
 
-resetForm();
-btn.disabled = true;
-window.scrollTo(0,0);
+  resetForm();
+  btn.disabled = true;
+  window.scrollTo(0,0);
     })
     .catch((error) => {
       console.error("Error al enviar el formulario:", error);
@@ -343,3 +344,11 @@ function cerrarModal(){
   speener.classList.add('oculto');
   window.scrollTo(0,0);
 };
+
+function insertDate(){
+  const contentCopy = document.querySelector(".copytext");
+  const year = new Date().getFullYear();
+  const textCopy = document.createElement('P');
+  textCopy.innerHTML = `<p class="footer__copy">Todos los derechos reservados<span class="nombre"><strong>Soy Nícola &copy; ${year}</strong></span></p>`;
+  contentCopy.appendChild(textCopy);
+}

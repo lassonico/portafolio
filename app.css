@@ -1088,7 +1088,7 @@ margin: 0 auto;
 @media (min-width: 768px){
     .footer{
         flex-direction: row;
-        gap: 60px;
+        
         align-items: center;
         justify-content: space-evenly;
         height: auto;
@@ -1097,7 +1097,8 @@ margin: 0 auto;
         display: block;
         position: absolute;
         bottom: 10px;
-        left: auto;
+        left: 50%;
+        transform: translate(-50%, -50%);
         margin-top: 20px;
         padding-top: 30px;
         color: var(--secondary);
@@ -1151,13 +1152,21 @@ margin: 0 auto;
         height: 30px;
     }
 }
+.footer .copytext{
+    margin: 0;
+    padding: 0;
+}
+
+.copytext p{
+    margin: 0;
+}
 
 .footer .footer__copy{
     font-size: 15px;
     font-weight: 400;
     color: var(--secondary);
     text-align: center;
-    margin: 60px auto 2px auto;
+    margin: 60px auto 3px auto;
 }
 
 .footer .contacto{
