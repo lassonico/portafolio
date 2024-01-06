@@ -8,7 +8,7 @@ function iniciarApp(){
   interaccionNav();
   botonhero();
   botonsoy();
-  insertDate();
+  insertarYear();
 }
 
 //Mejora la navegacion al scrollear y quita el id de la barra de navegacion
@@ -345,7 +345,7 @@ function cerrarModal(){
   window.scrollTo(0,0);
 }
 
-function insertDate(){
+function insertarYear(){
   const contentCopy = document.querySelector(".copytext");
   const year = new Date().getFullYear();
   const textCopy = document.createElement('DIV');
