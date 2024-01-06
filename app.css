@@ -387,11 +387,6 @@ a{
     margin-bottom: 20px;
 }
 
-.contenedor__rrss .logox{
-    width: 22px;
-    margin: 2px 0 0 0;
-}
-
 @media (min-width: 768px){
     .hero .subtitle{
         text-align: center;
@@ -874,7 +869,7 @@ margin: 0 auto;
     border-radius: 15px;
     transform: translateX(-50%);
     z-index: 1;
-    animation: topdown 32s ease-out infinite;
+    animation: topdown 8s ease-out infinite;
 }
 
 .img-celular{
@@ -891,7 +886,7 @@ margin: 0 auto;
         top: 0;
     }
     50%{
-        top: -2390px;
+        top: -80px;
     }
     100%{
         top: 0;
