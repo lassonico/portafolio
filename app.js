@@ -188,7 +188,7 @@ function validar(e){
     return
   }
 
-  if( e.target.id === 'telefono' && e.target.value.length > 10){
+  if( e.target.id === 'telefono' && e.target.value.length > 10 ){
     validando('El WhatsApp no es válido', e.target.parentElement);
     email[e.target.name] = '';
     inputTelefono.focus()
@@ -237,7 +237,7 @@ function validarEmail(email){
 }
 
 function validarWpp(tele){
-  const expex = /(\(?(\+57)\)?)?(3)(\d{9})/;
+  const expex = /(\(?(\+57)\)?)?(\d{9})/;
   const resultado = expex.test(tele);
   return resultado
 }
@@ -312,9 +312,9 @@ function enviandoForm(e){
         modalContent.classList.remove('oculto');
       }, 4000)
 
-  resetForm();
-  btn.disabled = true;
-  window.scrollTo(0,0);
+      resetForm();
+      btn.disabled = true;
+      window.scrollTo(0,0);
     })
     .catch((error) => {
       console.error("Error al enviar el formulario:", error);
